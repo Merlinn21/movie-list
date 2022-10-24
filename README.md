@@ -20,24 +20,24 @@ Library Used :
   
  Case Found : 
  1. User Review Avatar
-    Positive : 
-    Result return image hash for Gravatar or Gravatar link
-    ex : 992eef352126a53d7e141bf9e8707576.jpg / https://www.gravatar.com/avatar/992eef352126a53d7e141bf9e8707576.jpg
+    - Positive : 
+      Result return image hash for Gravatar or Gravatar link
+      ex : 992eef352126a53d7e141bf9e8707576.jpg / https://www.gravatar.com/avatar/992eef352126a53d7e141bf9e8707576.jpg
     
-    Negative : 
-    Returning null value for avatar path
+    - Negative : 
+      Returning null value for avatar path
     
-    Handling : 
-    If avatar path is null, the default avatar from Gravatar will be used. https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y
+    - Handling : 
+      If avatar path is null, the default avatar from Gravatar will be used. https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y
     
  2. Video Trailer
-    Positive : 
-    Result return array of JSON containing data for the video
+    - Positive : 
+      Result return array of JSON containing data for the video
     
-    Negative : 
-    Result return array of JSON containing data for the video with 0 size
+    - Negative : 
+      Result return array of JSON containing data for the video with 0 size
     
-    Handling : 
-    Instead of youtube trailer, movie backdrop poster will be shown
+    - Handling : 
+      Instead of youtube trailer, movie backdrop poster will be shown
     
     
