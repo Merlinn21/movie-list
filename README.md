@@ -40,4 +40,4 @@ Library Used :
     - Handling : 
       Instead of youtube trailer, movie backdrop poster will be shown
     
-    
+ APK Download : https://github.com/Merlinn21/movie-list/blob/master/app-debug.apk
