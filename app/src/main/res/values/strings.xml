@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">movie-list</string>
+
+    <!-- Title -->
+    <string name="genre_list">Genre List</string>
+    <string name="movie_list">Movie List</string>
+
+    <!-- Movie Detail -->
+    <string name="overview">Overview</string>
+    <string name="load_more">Load More Review</string>
+    <string name="no_review">No Review</string>
+    <string name="user_review">User Review</string>
+    <string name="movie_score">Movie Score</string>
+
+    <!-- Placeholder -->
+    <string name="genre_placeholder">Genre Placeholder</string>
+    <string name="title_placeholder">Title Placeholder</string>
+    <string name="status_placeolder">Status Placeholder</string>
+    <string name="runtime_placeholder">Runtime Placeholder</string>
+    <string name="score_placeholder">7.2</string>
+    <string name="release_date_placeholder">10–10–2022</string>
+    <string name="overview_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum neque non consequat malesuada. Pellentesque tincidunt sodales tellus sed tempor. Sed ut mauris in lectus consectetur rutrum a in tellus. Sed pulvinar nunc nisl. Cras mollis ex a elit congue, sed finibus felis tempor. Morbi cursus ullamcorper commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse a lectus tempor libero dapibus tristique sit amet in eros.</string>
+    <string name="name_placeholder">Name</string>
+    <string name="review_placeolder">@string/overview_placeholder</string>
 </resources>

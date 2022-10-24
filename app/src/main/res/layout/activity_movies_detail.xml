@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MovieDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_backdrop_poster"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin_padding">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="@dimen/movie_poster_width"
+                android:layout_height="@dimen/movie_poster_height"
+                android:layout_marginEnd="@dimen/normal_margin_padding"/>
+
+            <TextView
+                android:id="@+id/tv_original_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/title_placeholder"
+                android:textSize="@dimen/text_size_title"/>
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin_padding"
+                android:layout_below="@id/tv_original_title"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textColor="@color/grey"
+                android:text="@string/release_date_placeholder"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin_padding"
+                android:layout_below="@id/tv_release_date"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textColor="@color/white"
+                android:text="@string/status_placeolder"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin_padding"
+                android:layout_below="@id/tv_status"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textColor="@color/grey"
+                android:text="@string/runtime_placeholder"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_card_score"
+                android:layout_width="@dimen/card_score_size"
+                android:layout_height="@dimen/card_score_size"
+                android:layout_below="@id/tv_runtime"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:layout_marginTop="@dimen/large_margin_padding"
+                app:cardElevation="@dimen/card_eleveation"
+                app:cardBackgroundColor="@color/primary_color"
+                app:cardCornerRadius="@dimen/circular_card_radius">
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_extra_large"
+                    android:text="@string/score_placeholder"/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin_padding"
+            android:layout_marginEnd="@dimen/normal_margin_padding"
+            android:textColor="@color/white"
+            android:text="@string/overview"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_title"/>
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin_padding"
+            android:textColor="@color/white"
+            android:text="@string/overview_placeholder"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin_padding"
+            android:layout_marginEnd="@dimen/normal_margin_padding"
+            android:textColor="@color/white"
+            android:text="@string/user_review"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_title"/>
+
+        <include
+            android:id="@+id/layout_review"
+            android:visibility="gone"
+            layout="@layout/layout_review"
+        />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/normal_margin_padding"
+            android:textAlignment="center"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/text_size_title"
+            android:text="@string/load_more"/>
+
+        <TextView
+            android:id="@+id/tv_no_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin_padding"
+            android:layout_marginBottom="@dimen/normal_margin_padding"
+            android:textAlignment="center"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/text_size_title"
+            android:text="@string/no_review"/>
+    </LinearLayout>
+
+</ScrollView>

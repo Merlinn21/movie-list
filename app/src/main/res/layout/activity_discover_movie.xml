@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DiscoverMovieActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_margin_padding"
+        android:layout_marginTop="@dimen/normal_margin_padding"
+        android:layout_marginEnd="@dimen/normal_margin_padding"
+        android:layout_marginBottom="@dimen/normal_margin_padding"
+        android:textAlignment="center"
+        android:text="@string/genre_list"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <ProgressBar
+        android:id="@+id/my_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rc_movie"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tv_title"
+        android:id="@+id/rc_movie"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

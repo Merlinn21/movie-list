@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin & Padding -->
+    <dimen name="extra_small_margin_padding">5dp</dimen>
+    <dimen name="small_margin_padding">10dp</dimen>
+    <dimen name="normal_margin_padding">15dp</dimen>
+    <dimen name="large_margin_padding">20dp</dimen>
+    <dimen name="very_large_margin_padding">30dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_size_extra_large">28sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner_radius">15dp</dimen>
+    <dimen name="circular_card_radius">35dp</dimen>
+    <dimen name="card_eleveation">10dp</dimen>
+
+    <!-- Movie -->
+    <dimen name="movie_poster_width">140dp</dimen>
+    <dimen name="movie_poster_height">200dp</dimen>
+
+    <!-- Movie Detail -->
+    <dimen name="card_score_size">70dp</dimen>
+
+    <!-- Review -->
+    <dimen name="card_review_size">50dp</dimen>
+    <dimen name="card_review_radius">25dp</dimen>
+    <dimen name="star_size">20dp</dimen>
+</resources>
